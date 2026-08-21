@@ -9,18 +9,16 @@ const allImages = foods.map(f => f.image);
 export default function Home() {
   return (
     <div className="home">
-      {/* Hero Section with DriftWall-style image grid */}
+      {/* Hero Section with static image grid */}
       <section className="hero">
-        <div className="hero__bg">
-          <div className="hero__drift">
-            {[...allImages, ...allImages].map((src, i) => (
-              <div key={i} className="hero__drift-item">
-                <img src={src} alt="" loading="lazy" />
-              </div>
-            ))}
-          </div>
-          <div className="hero__overlay" />
+        <div className="hero__grid">
+          {allImages.map((src, i) => (
+            <div key={i} className="hero__grid-item">
+              <img src={src} alt="" loading="lazy" />
+            </div>
+          ))}
         </div>
+        <div className="hero__overlay" />
 
         <motion.div
           className="hero__content"

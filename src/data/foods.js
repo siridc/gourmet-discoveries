@@ -9,6 +9,7 @@ export const foods = [
   // ============ MAIN DISH ============
   {
     id: 'adobo', name: 'Adobo', category: 'main-dish',
+    moniker: 'The Quintessential Filipino Comfort Food',
     image: '/Pictures/main dish/adobo.jpeg',
     history: [
       'Adobo is a dish of protein braised in vinegar, and spiced with garlic and black peppercorns. The term "adobo" itself comes from the Spanish word "adobar," which means to marinate or pickle. In pre-colonial times when early Filipinos used vinegar and salt to preserve. Adobo has evolved significantly over the centuries, influenced by various cultures that interacted with the Philippines.',
@@ -25,6 +26,7 @@ export const foods = [
   },
   {
     id: 'sinigang', name: 'Sinigang', category: 'main-dish',
+    moniker: 'A Tangy Tamarind Sour Soup',
     image: '/Pictures/main dish/sinigang.png',
     history: [
       'Sinigang, a popular dish in the Philippines, has its roots in pre-colonial times when souring agents like tamarind, kamias, and guava were used in cooking. Originating from the Tagalog word "singang," meaning "stew," sinigang has evolved into a beloved dish with regional variations. It is an integral part of Filipino culture, often served during the rainy season to warm the body and soul.',
@@ -41,6 +43,7 @@ export const foods = [
   },
   {
     id: 'kare-kare', name: 'Kare-Kare', category: 'main-dish',
+    moniker: 'A Rich Peanut-Based Oxtail Stew',
     image: '/Pictures/main dish/kare-kare.jpeg',
     history: [
       'Kare-Kare, a Filipino dish, has a rich history dating back hundreds of years. Two stories suggest it originated from the Kapampangans and the nearby Tagalog people. The Kapampangans believe Kare-Kare originated from a dish called Kari, developed by the Moro people of Southern Mindanao.',
@@ -60,6 +63,7 @@ export const foods = [
   },
   {
     id: 'tinola', name: 'Tinola', category: 'main-dish',
+    moniker: 'A Ginger-Infused Chicken Broth',
     image: '/Pictures/main dish/tinola.png',
     history: [
       "Chicken tinola is a popular Filipino soup dish, originating from cooking chicken in ginger broth. Its origins are still unknown, but it is suggested that it has existed before Spanish rule. Antonio Pigafetta, a Venetian explorer who joined Ferdinand Magellan's 1522 expedition, recorded the food served to Magellan's explorers in his diaries.",
@@ -80,6 +84,7 @@ export const foods = [
   },
   {
     id: 'lechon-kawali', name: 'Lechon Kawali', category: 'main-dish',
+    moniker: 'Crispy Deep-Fried Pork Belly',
     image: '/Pictures/main dish/lechon-kawali.png',
     history: [
       'Lechon Kawali traces its roots to the Philippines, where it has been a culinary tradition for generations. The dish is believed to have evolved from the Spanish technique of cooking suckling pig, known as lechon, which was introduced to the Philippines during the colonial era.',
@@ -102,6 +107,7 @@ export const foods = [
   // ============ DESSERT ============
   {
     id: 'bibingka', name: 'Bibingka', category: 'dessert',
+    moniker: 'A Sweet Coconut Rice Cake',
     image: '/Pictures/dessert/bibingka.jpg',
     history: [
       'Bibingka is a traditional Filipino rice cake, part of the "kakanin" (rice-based desserts). Its taste resembles rice pudding but is sweeter. While its origins are debated, some believe it came from Indonesia or India, where a similar dessert, "bebinca" or "bibik," exists.',
@@ -122,6 +128,7 @@ export const foods = [
   },
   {
     id: 'puto-bumbong', name: 'Puto Bumbong', category: 'dessert',
+    moniker: 'A Purple Steamed Rice Delicacy',
     image: '/Pictures/dessert/putobumbong.jpg',
     history: [
       'The origins of puto bumbong date back to the early Spanish colonial period, with some believing it was brought to the Philippines from Mexico by the expedition of Miguel Lopez de Legazpi. It is made from a sticky or glutinous rice called "pirurutong," which is naturally violet or purple. The rice is soaked in saltwater overnight, dried, and placed into bamboo tubes called "bumbong." The tubes are then steamed until steam escapes from the holes. Once cooked, the rice is topped with butter, margarine, grated coconut, and sugar, and wrapped in banana leaves for serving.'
@@ -139,6 +146,7 @@ export const foods = [
   },
   {
     id: 'halo-halo', name: 'Halo-Halo', category: 'dessert',
+    moniker: 'The Ultimate Mixed Shaved Ice',
     image: '/Pictures/dessert/halo-halo.jpg',
     history: [
       'The origin of halo-halo is linked to pre-war Japanese Filipinos and the Japanese dessert kakigōri. Early versions, like "monggo con hielo," featured mung beans cooked in syrup, served over crushed ice with milk and sugar. Over time, more local ingredients were added, creating the modern halo-halo. Unlike its Japanese counterpart, halo-halo places ingredients under the ice rather than on top.',
@@ -159,6 +167,7 @@ export const foods = [
   },
   {
     id: 'ube-halaya', name: 'Ube Halaya', category: 'dessert',
+    moniker: 'A Velvety Purple Yam Jam',
     image: '/Pictures/dessert/ubehalaya.jpg',
     history: [
       'Ube halaya, also known as "ube jam" or "purple yam jam," has been a beloved dessert in the Philippines for generations. Its roots can be traced back to the early 20th century when Filipinos began experimenting with different ways to prepare ube. The dish typically consists of grated purple yam, coconut milk, condensed milk, and sugar, all simmered together until it forms a rich, sweet, and vibrant purple paste.'
@@ -177,6 +186,7 @@ export const foods = [
   },
   {
     id: 'taho', name: 'Taho', category: 'dessert',
+    moniker: 'A Silky Sweet Soybean Pudding',
     image: '/Pictures/dessert/taho.jpg',
     history: [
       'Taho, a Filipino version of soybean pudding, has been around for generations. Its origins trace back to the Chinese "douhua," accidentally discovered during the Han Dynasty (206-220 A.D.). Brought to the Philippines through long-standing cultural ties with China, locals replaced almond syrup with a sweeter sugar syrup.',
@@ -196,6 +206,7 @@ export const foods = [
   // ============ STREET FOOD ============
   {
     id: 'balut', name: 'Balut', category: 'street-food',
+    moniker: 'A Fertilized Duck Egg Delicacy',
     image: '/Pictures/streetfood/balut.PNG',
     history: [
       'Balut is a traditional food in the Philippines. It was introduced to the Philippines by the Chinese in 1565 or around 1885. Balut has a long and storied history, dating back to pre-colonial times in the Philippines.',
@@ -216,6 +227,7 @@ export const foods = [
   },
   {
     id: 'isaw', name: 'Isaw', category: 'street-food',
+    moniker: 'Grilled Intestine Street Skewers',
     image: '/Pictures/streetfood/isaw.PNG',
     history: [
       'Originally considered a humble dish, Isaw originated in Manila where food vendors utilized offal cuts, which were often discarded, to use every part of the animal. In some parts of the Philippines, beef intestines may be used instead of chicken or pork.',
@@ -236,6 +248,7 @@ export const foods = [
   },
   {
     id: 'kwek-kwek', name: 'Kwek-Kwek', category: 'street-food',
+    moniker: 'Deep-Fried Orange Battered Eggs',
     image: '/Pictures/streetfood/kwek-kwek.PNG',
     history: [
       "The origin of Kwek-Kwek is said to trace back to a balut vendor in Cubao. It's said she accidentally dropped her balut on the ground and instead of throwing it away, she peeled off the shells and deep-fried them in batter to avoid wasting them.",
@@ -255,6 +268,7 @@ export const foods = [
   },
   {
     id: 'betamax', name: 'Betamax', category: 'street-food',
+    moniker: 'Grilled Coagulated Blood Cubes',
     image: '/Pictures/streetfood/betamax.PNG',
     history: [
       'Not for the faint of heart, Betamax is grilled coagulated pork or chicken blood. Brushed with sauce while grilled, Betamax are basically blood cubes that have been skewered. Due to their shape and dark color, people started calling them Betamax because they were reminiscent of the black tapes.'
@@ -271,6 +285,7 @@ export const foods = [
   },
   {
     id: 'ice-scramble', name: 'Ice Scramble', category: 'street-food',
+    moniker: 'A Colorful Shaved Ice Street Treat',
     image: '/Pictures/streetfood/scramble.PNG',
     history: [
       'Traditionally, street vendors already prepare all the ingredients at home then mix them on the spot. The exact origin of Ice Scramble is hard to pinpoint, with some believing it originated in Iloilo.',
@@ -287,6 +302,7 @@ export const foods = [
   // ============ BEVERAGE ============
   {
     id: 'buko-juice', name: 'Buko Juice', category: 'beverage',
+    moniker: 'Fresh Young Coconut Water',
     image: '/Pictures/beverage/buko.png',
     history: [
       'Buko juice, also known as coconut water, is a refreshing and popular drink commonly sold on the streets or in restaurants in the Philippines. The coconut meat can be used for desserts such as buko salad, buko pandan. In the Philippine provinces, some use both the coconut meat and coconut water combined with milk and crackers. It is a very healthy drink during the summertime.'
@@ -303,6 +319,7 @@ export const foods = [
   },
   {
     id: 'sagot-gulaman', name: "Sago't Gulaman", category: 'beverage',
+    moniker: 'A Sweet Tapioca and Jelly Cooler',
     image: '/Pictures/beverage/sagotGulaman.png',
     history: [
       "Sago't Gulaman, Palamig ng Bayan — it is one of the most well known drinks in the Philippines. Probably, it might even be the most recreated drink in the country, as a lot of versions can be found everywhere.",
@@ -319,6 +336,7 @@ export const foods = [
   },
   {
     id: 'kapeng-barako', name: 'Kapeng Barako', category: 'beverage',
+    moniker: 'A Bold Batangas Liberica Coffee',
     image: '/Pictures/beverage/kapengBarako.png',
     history: [
       "First things first, what is Kapeng Barako? Barako is a Tagalog word that means 'manliness' or 'strong man,' and Kape means coffee. Because of its strong aroma and taste, it got the name Kapeng Barako. Kapeng Barako became a common name for all coffee from Batangas. It is an exotic and rare coffee fully grown in Lipa and other high places in Batangas and is known for its strong taste. Barako trees are some of the largest commercially cultivated coffee trees, reaching up to 66 ft (20 m) high."
@@ -335,6 +353,7 @@ export const foods = [
   },
   {
     id: 'buko-pandan', name: 'Buko Pandan', category: 'beverage',
+    moniker: 'A Creamy Coconut Pandan Dessert',
     image: '/Pictures/beverage/bukoPandan.png',
     history: [
       "Buko Pandan is a creamy, tropical dessert made with strips of coconut and pandan-flavored jelly. It's refreshing and perfect for get-togethers or simply as an afternoon snack. It is said to have originated from the eastern Visayas region on the island of Bohol. Influenced by American occupation, locals tailored the idea of an American fruit salad to suit Filipino tastes."
@@ -351,6 +370,7 @@ export const foods = [
   },
   {
     id: 'lambanog', name: 'Lambanog Cocktail', category: 'beverage',
+    moniker: 'A Distilled Coconut Palm Spirit',
     image: '/Pictures/beverage/lambanog.png',
     history: [
       'Lambanóg is a traditional Filipino distilled palm liquor. It is an alcoholic liquor made from the distillation of naturally fermented sap (tubâ) from palm trees such as sugar palm, coconut, or nipa. Lambanog is well-known for having a strong alcohol concentration and can be used as a base liquor for various flavored spirits and cocktail creations.'

@@ -55,11 +55,25 @@
   color: var(--color-gold-warm);
 }
 
+/* Dancing Script for the food name title */
 .food-detail__title {
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: var(--text-hero);
   color: var(--color-white);
-  letter-spacing: -1px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Moniker subtitle — Source Serif 4 italic for editorial contrast */
+.food-detail__moniker {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--text-h3);
+  color: var(--color-gray-300);
+  margin-top: var(--space-sm);
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 
 /* ============ Sections ============ */
@@ -102,59 +116,64 @@
   object-fit: cover;
 }
 
+/* Justified paragraph text */
 .food-detail__paragraph {
   font-size: var(--text-body);
   color: var(--color-gray-800);
   line-height: 1.8;
   margin-bottom: var(--space-lg);
+  text-align: justify;
 }
 
 .food-detail__paragraph:last-child {
   margin-bottom: 0;
 }
 
-/* ============ Ingredients ============ */
+/* ============ Ingredients — Bulleted List ============ */
 .food-detail__ingredients {
   max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-sm) var(--space-xl);
+  gap: var(--space-xs) var(--space-xl);
+  list-style: none;
 }
 
 .food-detail__ingredient {
   padding: var(--space-sm) 0;
   border-bottom: 1px solid var(--color-gray-200);
-}
-
-.food-detail__checkbox-label {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  cursor: pointer;
   font-family: var(--font-body);
   font-size: var(--text-body);
   color: var(--color-gray-800);
-  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
 }
 
-.food-detail__checkbox {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--color-blue);
-  cursor: pointer;
+.food-detail__ingredient::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold-warm);
   flex-shrink: 0;
-}
-
-.food-detail__checkbox:checked + span {
-  text-decoration: line-through;
-  color: var(--color-gray-400);
 }
 
 /* ============ Video ============ */
 .food-detail__video-wrapper {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.food-detail__video-credit {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  color: var(--color-gray-400);
+  margin-top: var(--space-md);
+  font-style: italic;
+  letter-spacing: 0.3px;
 }
 
 /* ============ Steps ============ */
@@ -208,6 +227,7 @@
   font-size: var(--text-body);
   color: var(--color-gray-600);
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* ============ Back CTA ============ */

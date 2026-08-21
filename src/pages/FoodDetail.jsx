@@ -36,7 +36,10 @@ export default function FoodDetail() {
           <Link to={`/foods/${category}`} className="food-detail__back">
             ← {cat?.name || 'Back'}
           </Link>
-          <h1 className="food-detail__title">{food.name}</h1>
+          <h1 className="food-detail__title text-display">{food.name}</h1>
+          {food.moniker && (
+            <p className="food-detail__moniker">{food.moniker}</p>
+          )}
         </motion.div>
       </section>
 
@@ -79,12 +82,7 @@ export default function FoodDetail() {
             </h2>
             <ul className="food-detail__ingredients">
               {food.ingredients.map((item, i) => (
-                <li key={i} className="food-detail__ingredient">
-                  <label className="food-detail__checkbox-label">
-                    <input type="checkbox" className="food-detail__checkbox" />
-                    <span>{item}</span>
-                  </label>
-                </li>
+                <li key={i} className="food-detail__ingredient">{item}</li>
               ))}
             </ul>
           </motion.div>
@@ -107,6 +105,9 @@ export default function FoodDetail() {
               <div className="food-detail__video-wrapper">
                 <YouTubeEmbed videoId={food.youtubeId} title={`How to cook ${food.name}`} />
               </div>
+              <p className="food-detail__video-credit">
+                Video credits to the respective content creators on YouTube
+              </p>
             </motion.div>
           </div>
         </section>
