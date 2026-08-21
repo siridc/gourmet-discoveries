@@ -1,0 +1,269 @@
+/* ============ Hero ============ */
+.food-detail__hero {
+  position: relative;
+  height: 55vh;
+  min-height: 360px;
+  max-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin-top: calc(-1 * (var(--nav-height) + 4px));
+}
+
+.food-detail__hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.food-detail__hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-detail__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 24, 0.2) 0%,
+    rgba(26, 26, 24, 0.85) 100%
+  );
+}
+
+.food-detail__hero-content {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-3xl) var(--space-lg);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.food-detail__back {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  color: var(--color-gold);
+  text-decoration: none;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.5px;
+  transition: color var(--transition-fast);
+}
+
+.food-detail__back:hover {
+  color: var(--color-gold-warm);
+}
+
+.food-detail__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-hero);
+  color: var(--color-white);
+  letter-spacing: -1px;
+}
+
+/* ============ Sections ============ */
+.food-detail__section {
+  background: var(--color-white);
+}
+
+.food-detail__section--alt {
+  background: var(--color-cream);
+}
+
+.food-detail__section-title {
+  font-size: var(--text-h1);
+  margin-bottom: var(--space-xl);
+}
+
+.food-detail__section-title .text-display {
+  color: var(--color-gold-warm);
+}
+
+/* ============ History ============ */
+.food-detail__history {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.food-detail__history-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+}
+
+.food-detail__history-image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.food-detail__paragraph {
+  font-size: var(--text-body);
+  color: var(--color-gray-800);
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.food-detail__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ Ingredients ============ */
+.food-detail__ingredients {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm) var(--space-xl);
+}
+
+.food-detail__ingredient {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.food-detail__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-gray-800);
+  transition: color var(--transition-fast);
+}
+
+.food-detail__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-blue);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.food-detail__checkbox:checked + span {
+  text-decoration: line-through;
+  color: var(--color-gray-400);
+}
+
+/* ============ Video ============ */
+.food-detail__video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ============ Steps ============ */
+.food-detail__steps {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.food-detail__step {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  padding: var(--space-lg);
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.food-detail__step:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.food-detail__step-number {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: var(--text-body);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-detail__step-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-xs);
+  color: var(--color-gray-900);
+}
+
+.food-detail__step-desc {
+  font-size: var(--text-body);
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+/* ============ Back CTA ============ */
+.food-detail__back-section {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+  background: var(--color-white);
+}
+
+.food-detail__back-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-family: var(--font-heading);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.food-detail__back-btn:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 1024px) {
+  .food-detail__history {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .food-detail__history-image {
+    position: static;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-detail__hero {
+    min-height: 280px;
+    max-height: 400px;
+  }
+
+  .food-detail__ingredients {
+    grid-template-columns: 1fr;
+  }
+
+  .food-detail__step {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}

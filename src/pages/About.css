@@ -1,0 +1,170 @@
+/* ============ About Hero ============ */
+.about__hero {
+  position: relative;
+  height: 40vh;
+  min-height: 280px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: calc(-1 * (var(--nav-height) + 4px));
+}
+
+.about__hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-blue) 0%,
+    #001d5c 50%,
+    var(--color-gray-900) 100%
+  );
+}
+
+.about__hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(252, 209, 22, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(206, 17, 38, 0.1) 0%, transparent 50%);
+}
+
+.about__hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 var(--space-lg);
+}
+
+.about__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-hero);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.about__tagline {
+  font-family: var(--font-body);
+  font-size: var(--text-h3);
+  color: var(--color-gray-300);
+  font-weight: 400;
+}
+
+/* ============ Creator Card ============ */
+.about__creator {
+  background: var(--color-cream);
+}
+
+.about__card {
+  display: flex;
+  gap: var(--space-3xl);
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.about__card-photo {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-blue-light);
+  box-shadow: var(--shadow-md);
+}
+
+.about__card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__card-role {
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  color: var(--color-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--space-xs);
+}
+
+.about__card-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-md);
+}
+
+.about__card-desc {
+  font-size: var(--text-body);
+  color: var(--color-gray-600);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.about__card-links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.about__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--color-gray-800);
+  background: var(--color-gray-100);
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.about__social-link:hover {
+  background: var(--color-blue-light);
+  color: var(--color-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__social-link svg {
+  flex-shrink: 0;
+}
+
+/* ============ Feedback Section ============ */
+.about__feedback {
+  background: var(--color-white);
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 768px) {
+  .about__hero {
+    min-height: 220px;
+    max-height: 320px;
+  }
+
+  .about__card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-xl);
+    gap: var(--space-xl);
+  }
+
+  .about__card-photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about__card-links {
+    justify-content: center;
+  }
+}
