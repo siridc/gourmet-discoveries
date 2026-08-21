@@ -11,7 +11,8 @@ export default function FeedbackForm() {
     const data = new FormData(form);
 
     try {
-      const res = await fetch('https://formspree.io/f/xljrvdnr', {
+      const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+      const res = await fetch(endpoint, {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
