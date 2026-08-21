@@ -1,3 +1,16 @@
-This project is a single-page static website that introduces traditional Filipino foods and highlights their cultural importance. The website presents each dish with a brief history that explains its origins and significance in Filipino tradition. Alongside this background, it provides a complete recipe with clearly listed ingredients and a step-by-step procedure, making it easy for anyone—whether a beginner or an experienced cook—to prepare the dishes at home. By combining historical context with practical cooking guidance, the site aims to preserve and promote Filipino culinary heritage in a way that is both informative and engaging.
+# React + Vite
 
-To make the learning process more interactive, the website also features embedded YouTube videos that demonstrate how each dish is prepared. This multimedia approach allows users to see the cooking process firsthand, complementing the written instructions and helping them gain confidence in recreating the recipes. Overall, the website not only serves as a recipe guide but also as a cultural resource that celebrates and shares the richness of Filipino cuisine with a wider audience.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

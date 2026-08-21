@@ -1,0 +1,30 @@
+.footer {
+  margin-top: auto;
+  background: var(--color-gray-900);
+}
+
+.footer__inner {
+  padding: var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer__brand {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.footer__brand .text-display {
+  color: var(--color-gold);
+}
+
+.footer__copy {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  color: var(--color-gray-400);
+  letter-spacing: 0.5px;
+}

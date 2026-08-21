@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap');
+
+:root {
+  /* Typography */
+  --font-display: "Dancing Script", cursive;
+  --font-heading: "DM Sans", sans-serif;
+  --font-body: "Source Serif 4", serif;
+
+  --text-hero: clamp(2.5rem, 5vw, 4.5rem);
+  --text-h1: clamp(2rem, 3.5vw, 3rem);
+  --text-h2: clamp(1.5rem, 2.5vw, 2rem);
+  --text-h3: clamp(1.125rem, 2vw, 1.5rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Philippine Flag Palette */
+  --color-blue: #0038A8;
+  --color-blue-light: #E8EEF8;
+  --color-blue-hover: #002d8a;
+  --color-red: #CE1126;
+  --color-red-light: #FDE8EB;
+  --color-red-hover: #a80e1f;
+  --color-gold: #FCD116;
+  --color-gold-warm: #F5A623;
+  --color-white: #FFFFFF;
+  --color-cream: #FAFAF7;
+  --color-gray-50: #F9F9F6;
+  --color-gray-100: #F5F5F0;
+  --color-gray-200: #EBEBDF;
+  --color-gray-300: #D1D1CB;
+  --color-gray-400: #A8A8A0;
+  --color-gray-600: #6B6B65;
+  --color-gray-800: #333330;
+  --color-gray-900: #1A1A18;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 64px;
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-xl: 0 16px 50px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 1rem);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-blue-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-heading);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.text-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Accent stripe (Philippine flag) */
+.accent-stripe {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--color-blue) 0%,
+    var(--color-blue) 33%,
+    var(--color-red) 33%,
+    var(--color-red) 66%,
+    var(--color-gold) 66%,
+    var(--color-gold) 100%
+  );
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-400);
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-blue-light);
+  color: var(--color-blue);
+}

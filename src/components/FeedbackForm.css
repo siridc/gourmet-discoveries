@@ -1,0 +1,113 @@
+.feedback {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.feedback__title {
+  font-size: var(--text-h2);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.feedback__subtitle {
+  font-size: var(--text-small);
+  color: var(--color-gray-600);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.feedback__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.feedback__label {
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--color-gray-800);
+}
+
+.feedback__input {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--color-gray-300);
+  border-radius: var(--border-radius-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+  background: var(--color-gray-50);
+}
+
+.feedback__input:focus {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px var(--color-blue-light);
+  background: var(--color-white);
+}
+
+.feedback__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedback__submit {
+  font-family: var(--font-heading);
+  font-size: var(--text-body);
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  background: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.feedback__submit:hover:not(:disabled) {
+  background: var(--color-red-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.feedback__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.feedback__success {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: #2d8a4e;
+}
+
+.feedback__success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e6f7ed;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.feedback__error {
+  color: var(--color-red);
+  font-size: var(--text-small);
+  text-align: center;
+}
